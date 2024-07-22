@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  background-color: Rgb(247, 247, 247);
+  height: 600px;
+  width: 100vw;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.lora-fond {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.word {
+  color: Rgb(0, 32, 87);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.personal {
+  margin-top: 8rem;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 50%;
+  height: 70%;
+  margin-top: 90px;
+  margin-left: 70px;
+
+  border-radius: 2000px;
+  box-shadow: 4px 4px 6px 7.5px #ddd8d8;
+}
+
+.intro {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  border-right: 3px solid orangered;
+  color: red;
+  width: 21ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(21), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.arrow .dwl {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.aboutme {
+  margin-top: 50px;
+  margin-left: 6rem;
+  padding: 10px;
+  border-radius: 35px;
+}
+.aboutme:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 6, 236),
+    rgb(220, 0, 240)
+  );
+  color: azure !important;
+}
+.icons {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 6rem;
+  justify-content: start;
+  gap: 20px;
+}
+.hover-fx {
+  font-size: 25px;
+}
+.icons button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 6, 236),
+    rgb(220, 0, 240)
+  );
+  color: white;
+}
+
+/* @media (max-width: 768px) {
+  .word {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+  }
+
+  .personal {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+
+  .aboutme {
+    margin-left: 2rem;
+  }
+
+  .icons {
+    margin-left: 2rem;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */

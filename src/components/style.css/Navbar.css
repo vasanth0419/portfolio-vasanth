@@ -1,0 +1,41 @@
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+.navbar-fluid {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  background-color: rgb(241, 239, 246) !important;
+}
+.vasanth:hover {
+  color: rgb(220, 0, 240);
+}
+.hireme:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 6, 236),
+    rgb(220, 0, 240)
+  );
+}
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+
+  border-radius: 30px;
+}
+
+.nav-link:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 6, 236),
+    rgb(220, 0, 240)
+  );
+  color: azure !important;
+}
