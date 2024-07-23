@@ -13,6 +13,7 @@ const Footer = () => {
 
           <div className="footer__social">
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/vasanth-salomon?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2F1iI8nfSQr%2B4%2Fd9c2S4Fzg%3D%3D"
               className="footer__link"
             >
@@ -27,7 +28,7 @@ const Footer = () => {
             >
               <i className="bi bi-github"></i>
             </a>
-            <a href="#" className="footer__link">
+            <a target="_blank" href="#" className="footer__link">
               <i className="bi bi-instagram"></i>
             </a>
           </div>

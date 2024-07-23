@@ -3,21 +3,23 @@
   color: #fff; /* Replace with your actual lighten color */
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
+  height: 200px;
 
 }
 .footer__container {
-  padding: 3rem 0;
+  padding: 1rem 0;
+
 }
 .footer__title {
   font-size: 2rem; /* Replace with your actual h1 font size */
-  margin-bottom: 1rem; /* Replace with your actual margin-bottom value */
+  margin-bottom: 10px; /* Replace with your actual margin-bottom value */
   font-weight: 600; /* Replace with your actual font-semi-bold value */
 }
 .footer__desc {
-  margin-bottom: 1.5rem; /* Replace with your actual margin-bottom value */
+  margin-bottom: 10px; /* Replace with your actual margin-bottom value */
 }
 .footer__social {
-  margin-bottom: 2rem; /* Replace with your actual margin-bottom value */
+  margin-bottom: 15px; /* Replace with your actual margin-bottom value */
 }
 .footer__link {
   font-size: 1.4rem;

@@ -12,7 +12,7 @@
     }
 .home {
   background-color: Rgb(247, 247, 247);
-  height: 600px;
+  height: 700px;
   width: 100vw;
   margin-top: 80px;
   margin-bottom: 40px;
@@ -33,7 +33,7 @@
 }
 
 .personal {
-  margin-top: 8rem;
+  margin-top: 10rem;
   margin-left: 6rem;
   display: flex;
   flex-direction: column;

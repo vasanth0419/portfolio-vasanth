@@ -69,6 +69,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 12px;
+  gap: 20px;
 }
 .team .social_links li {
   list-style: none;

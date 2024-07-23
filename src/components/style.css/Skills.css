@@ -1,6 +1,6 @@
 /* Skills container */
 .skills {
-  /* background-color: rgb(85, 4, 168); */
+ margin-top: 80px !important;
   background-image: linear-gradient(
     to right,
     rgb(106, 6, 236),

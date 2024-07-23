@@ -5,6 +5,7 @@
 }
 .main {
   width: 100%;
+  margin-top: 25px;
   height: auto;
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(245, 245, 245);
