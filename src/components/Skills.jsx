@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css/Skills.css";
 
+
 const skills = [
   { src: "src/assets/tech/html5.png", alt: "HTML 5", label: "HTML 5" },
   { src: "src/assets/tech/css.png", alt: "CSS 3", label: "CSS 3" },
@@ -59,6 +60,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
+      
     </div>
   );
 };

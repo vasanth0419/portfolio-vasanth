@@ -12,11 +12,14 @@ const Footer = () => {
           </p>
 
           <div className="footer__social">
-            <a href="#" className="footer__link">
+            <a
+              href="https://www.linkedin.com/in/vasanth-salomon?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2F1iI8nfSQr%2B4%2Fd9c2S4Fzg%3D%3D"
+              className="footer__link"
+            >
               <i className="bi bi-linkedin"></i>
             </a>
             <a
-              href="https://github.com/bedimcode"
+              href="https://github.com/vasanth0419"
               className="footer__link"
               id="profile-link"
               target="_blank"

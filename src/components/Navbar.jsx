@@ -1,18 +1,18 @@
 import React from "react";
 import "./style.css/Navbar.css";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
       <div className="container-fluid  navbar-fluid">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <a
+            <Link
               className="navbar-brand vasanth permanent-marker-regular mx-5"
-              href="#"
+              to="/"
             >
               Vasanth ,
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -27,43 +27,45 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto ">
                 <li className="nav-item  mx-4">
-                  <a
+                  <Link
                     className="nav-link text-dark"
                     aria-current="page"
-                    href="#"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item  mx-3">
-                  <a className="nav-link text-dark" href="#">
+                  <Link className="nav-link text-dark" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <a className="nav-link text-dark" href="#">
+                  <Link className="nav-link text-dark" to="/skills">
                     Skills
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <a className="nav-link text-dark" href="#">
+                  <Link className="nav-link text-dark" to="/education">
                     Education
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <a className="nav-link text-dark" href="#">
+                  <Link className="nav-link text-dark" to="/project">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <a className="nav-link text-dark" href="#">
+                  <Link className="nav-link text-dark" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <button type="button" className="btn hireme btn-dark mx-5">
-                Hire me
-              </button>
+              <Link to="/contact">
+                <button type="button" className="btn hireme btn-dark mx-5">
+                  Hire me
+                </button>
+              </Link>
             </div>
           </div>
         </nav>

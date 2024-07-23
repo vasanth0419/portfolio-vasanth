@@ -1,5 +1,12 @@
 import React from "react";
 import "./style.css/Home.css";
+import About from "./About";
+import Skills from "./Skills";
+import Education from "./Education";
+import Project from "./Project";
+import Contactus from "./Contactus";
+import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,25 +20,39 @@ const Home = () => {
             </h2>
             <h2 className="intro gradient-text">MERN STACK DEVELOPER.</h2>
           </div>
-          <button type="button" className="btn aboutme dwl btn-dark">
-            About Me <i className="bi arrow bi-arrow-down-circle-fill"></i>
-          </button>
+          <Link to="/about">
+            <button type="button" className="btn aboutme dwl btn-dark">
+              About Me <i className="bi arrow bi-arrow-down-circle-fill"></i>
+            </button>
+          </Link>
           <div className="icons mt-3">
-            <button type="button" className="btn btn-light">
-              <i className="hover-fx bi bi-linkedin"></i>
-            </button>
-            <button type="button" className="btn btn-light">
-              <i className="hover-fx bi bi-instagram"></i>
-            </button>
-            <button type="button" className="btn btn-light">
-              <i className="hover-fx bi bi-github"></i>
-            </button>
+            <a href="https://www.linkedin.com/in/vasanth-salomon?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMpMQz%2FzFRX2S%2BQNGt1PQHw%3D%3D">
+              <button type="button" className="btn btn-light">
+                <i className="hover-fx bi bi-linkedin"></i>
+              </button>
+            </a>
+            <a href="">
+              <button type="button" className="btn btn-light">
+                <i className="hover-fx bi bi-instagram"></i>
+              </button>
+            </a>
+            <a href="https://github.com/vasanth0419">
+              <button type="button" className="btn btn-light">
+                <i className="hover-fx bi bi-github"></i>
+              </button>
+            </a>
           </div>
         </div>
         <div className="col-md-6 text-center">
           <img className="image" src="src/img/profile-1.jpg" alt="Profile" />
         </div>
       </div>
+      <About />
+      <Skills />
+      <Education />
+      <Project />
+      <Contactus />
+      <Footer />
     </div>
   );
 };

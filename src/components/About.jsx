@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css/About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -35,19 +36,20 @@ const About = () => {
             </span>
             9566443153
           </p>
-          <div className="buttons">
+          <div className="buttons"><Link to="/skills">
             <button type="button" className="btn aboutme dwl btn-dark">
               Skills <i className="bi arrow bi-arrow-down-circle-fill"></i>
-            </button>
-            <button type="button" className="btn aboutme dwl btn-dark">
+            </button></Link>
+            <a href=""><button type="button" className="btn aboutme dwl btn-dark">
               Download CV <i className="bi arrow bi-arrow-up-circle-fill"></i>
-            </button>
+            </button></a>
           </div>
         </div>
         <div className="col-md-5 text-center">
           <img className="image-2" src="src/img/profile-1.jpg" alt="Profile" />
         </div>
       </div>
+      
     </div>
   );
 };
