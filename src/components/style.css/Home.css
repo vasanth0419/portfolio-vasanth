@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+ .gradient-text {
+      background: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
 .home {
   background-color: Rgb(247, 247, 247);
   height: 600px;
@@ -19,7 +26,7 @@
 }
 
 .word {
-  color: Rgb(0, 32, 87);
+  color: black;
   font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
   font-style: italic;
@@ -45,8 +52,8 @@
 .intro {
   font-family: "Lora", serif;
   font-size: 2rem;
-  border-right: 3px solid orangered;
-  color: red;
+  border-right: 3px solid rgb(220, 0, 240);
+  
   width: 21ch;
   white-space: nowrap;
   overflow: hidden;
@@ -104,33 +111,98 @@
   color: white;
 }
 
-/* @media (max-width: 768px) {
-  .word {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .home {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
-
+  .personal {
+    margin-top: 6rem;
+    margin-left: 4rem;
+  }
+  .image {
+    width: 60%;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
   .intro {
     font-size: 1.5rem;
+    width: 18ch;
   }
+  .aboutme {
+    margin-left: 4rem;
+  }
+  .icons {
+    margin-left: 4rem;
+    gap: 15px;
+  }
+}
 
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
   .personal {
     margin-top: 4rem;
     margin-left: 2rem;
   }
-
+  .image {
+    width: 70%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .word {
+    font-size: 2.5rem;
+  }
+  .intro {
+    font-size: 1.2rem;
+    width: 15ch;
+  }
   .aboutme {
     margin-left: 2rem;
   }
-
   .icons {
     margin-left: 2rem;
+    gap: 10px;
   }
+}
 
+@media (max-width: 480px) {
+  .home {
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .personal {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
   .image {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
   }
-} */
+  .word {
+    font-size: 2rem;
+  }
+  .intro {
+    font-size: 1rem;
+    width: 12ch;
+  }
+  .aboutme {
+    margin-left: 1rem;
+  }
+  .icons {
+    margin-left: 1rem;
+    gap: 5px;
+  }
+  .hover-fx {
+    font-size: 20px;
+  }
+}

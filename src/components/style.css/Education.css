@@ -33,12 +33,12 @@
   );
   transform: translateX(-50%);
 }
-.container {
+.edu {
   width: 50%;
   height: auto;
   position: relative;
 }
-.container ul::after {
+.edu ul::after {
   position: absolute;
   content: "";
   width: 2px;
@@ -51,10 +51,10 @@
   top: 0;
   z-index: 0;
 }
-.container ul {
+.edu ul {
   list-style: none;
 }
-.container ul li {
+.edu ul li {
   width: 50%;
   height: auto;
   padding: 15px 20px;
@@ -65,24 +65,24 @@
   z-index: 99;
   position: relative;
 }
-.container ul li:nth-child(odd) {
+.edu ul li:nth-child(odd) {
   float: left;
   clear: right;
   transform: translateX(-30px);
   text-align: right;
 }
-.container ul li:nth-child(odd) .date {
+.edu ul li:nth-child(odd) .date {
   right: 20px;
 }
-.container ul li:nth-child(even) {
+.edu ul li:nth-child(even) {
   float: right;
   clear: left;
   transform: translateX(30px);
 }
-.container ul li:nth-child(4) {
+.edu ul li:nth-child(4) {
   margin-bottom: 0;
 }
-.container ul li .title {
+.edu ul li .title {
   font-size: 20px;
   font-weight: 600;
   color: rgb(106, 6, 236);
@@ -108,7 +108,7 @@ ul li .date {
   place-items: center;
   font-size: 14px;
 }
-.container ul li .circle {
+.edu ul li .circle {
   width: 30px;
   height: 30px;
   background-color: rgb(220, 0, 240, 0.403);
@@ -116,7 +116,7 @@ ul li .date {
   position: absolute;
   top: 0;
 }
-.container ul li .circle::after {
+.edu ul li .circle::after {
   content: " ";
   width: 15px;
   height: 15px;
@@ -126,44 +126,44 @@ ul li .date {
   top: 25%;
   left: 25%;
 }
-.container ul li:nth-child(odd) .circle {
+.edu ul li:nth-child(odd) .circle {
   right: -30px;
   transform: translate(50%, -50%);
 }
-.container ul li:nth-child(even) .circle {
+.edu ul li:nth-child(even) .circle {
   left: -30px;
   transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1224px) {
-  .container {
+  .edu {
     width: 85%;
   }
 }
 @media screen and (max-width: 933px) {
-  .container {
+  .edu {
     width: 80%;
   }
-  .container ul::after {
+  .edu ul::after {
     left: 13px;
   }
-  .container ul li {
+  .edu ul li {
     width: 100%;
     float: none;
     clear: none;
     margin-bottom: 80px;
   }
-  .container ul li:nth-child(odd) {
+  .edu ul li:nth-child(odd) {
     transform: translateX(0);
     text-align: left;
   }
-  .container ul li:nth-child(even) {
+  .edu ul li:nth-child(even) {
     transform: translateX(0);
   }
-  .container ul li:nth-child(odd) .date {
+  .edu ul li:nth-child(odd) .date {
     left: 20px;
   }
-  .container ul li:nth-child(odd) .circle {
+  .edu ul li:nth-child(odd) .circle {
     left: -30px;
     transform: translate(-50%, -50%);
   }

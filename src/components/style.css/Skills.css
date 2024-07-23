@@ -14,11 +14,11 @@
 
 /* Skills inner container */
 .skills-2 {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(106, 6, 236),
     rgb(220, 0, 240)
-  );
+  ); */
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
@@ -29,7 +29,8 @@
 .skill-img {
   height: 80px;
   width: 80px;
-  border-radius: 20px;
+  border-radius: 25px ;
+  
 }
 
 /* Skill label */

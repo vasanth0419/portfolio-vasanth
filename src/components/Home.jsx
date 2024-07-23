@@ -9,9 +9,9 @@ const Home = () => {
           <div className="personal">
             <h2 className="word">Hi,</h2>
             <h2 className="word">
-              I'm Vasanth <span style={{ color: "orange" }}>Salomon,</span>
+              I'm Vasanth <span className="gradient-text">Salomon,</span>
             </h2>
-            <h2 className="intro">MERN STACK DEVELOPER.</h2>
+            <h2 className="intro gradient-text">MERN STACK DEVELOPER.</h2>
           </div>
           <button type="button" className="btn aboutme dwl btn-dark">
             About Me <i className="bi arrow bi-arrow-down-circle-fill"></i>

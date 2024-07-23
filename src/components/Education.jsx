@@ -5,7 +5,7 @@ const Education = () => {
     <div>
       <div className="main">
         <h3 className="heading">Education</h3>
-        <div className="container">
+        <div className="container edu">
           <ul>
             <li>
               <h3 className="title">Full Stack Development</h3>
