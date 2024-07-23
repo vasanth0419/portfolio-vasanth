@@ -1,17 +1,24 @@
 import React from "react";
 import "./style.css/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path
+      ? "nav-link text-dark active"
+      : "nav-link text-dark";
+  };
   return (
     <div>
-      <div className="container-fluid  navbar-fluid">
+      <div className="container-fluid navbar-fluid">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <Link
               className="navbar-brand vasanth permanent-marker-regular mx-5"
               to="/"
             >
-              Vasanth ,
+              Vasanth
             </Link>
             <button
               className="navbar-toggler"
@@ -25,38 +32,29 @@ const Navbar = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav mx-auto ">
-                <li className="nav-item  mx-4">
-                  <Link
-                    className="nav-link text-dark"
-                    aria-current="page"
-                    to="/"
-                  >
+              <ul className="navbar-nav mx-auto">
+                <li className="nav-item mx-4">
+                  <Link className={isActive("/")} aria-current="page" to="/">
                     Home
                   </Link>
                 </li>
-                <li className="nav-item  mx-3">
-                  <Link className="nav-link text-dark" to="/about">
+                <li className="nav-item mx-3">
+                  <Link className={isActive("/about")} to="/about">
                     About
                   </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <Link className="nav-link text-dark" to="/skills">
+                  <Link className={isActive("/skills")} to="/skills">
                     Skills
                   </Link>
                 </li>
-                {/* <li className="nav-item mx-3">
-                  <Link className="nav-link text-dark" to="/education">
-                    Education
-                  </Link>
-                </li> */}
                 <li className="nav-item mx-3">
-                  <Link className="nav-link text-dark" to="/project">
+                  <Link className={isActive("/project")} to="/project">
                     Projects
                   </Link>
                 </li>
                 <li className="nav-item mx-3">
-                  <Link className="nav-link text-dark" to="/contact">
+                  <Link className={isActive("/contact")} to="/contact">
                     Contact
                   </Link>
                 </li>

@@ -42,3 +42,7 @@
   );
   color: azure !important;
 }
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important; /* Change this to the color you want for the active link */
+}
