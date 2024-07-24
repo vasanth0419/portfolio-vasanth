@@ -33,12 +33,14 @@
 .col-md-7 {
   padding-left: 2rem;
   margin-top: 50px;
+
 }
 
 .aboutinfo {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.2rem;
   font-style: italic;
+  font-weight: 500;
 }
 
 .tel,
