@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css/Home.css";
 import About from "./About";
-
+import profile from "../assets/tech/profile-1.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6 text-center">
-            <img className="image" src="public/profile-1.jpg" alt="Profile" />
+            <img className="image" src={profile} alt="Profile" />
           </div>
         </div>
       </div>
