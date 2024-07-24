@@ -3,7 +3,7 @@ import "./style.css/About.css";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import profile from "../assets/tech/profile-1.jpg";
-
+import resume from "../assets/resume/cv.pdf";
 const About = () => {
   return (
     <>
@@ -45,10 +45,7 @@ const About = () => {
                   Skills <i className="bi arrow bi-arrow-down-circle-fill"></i>
                 </button>
               </Link>
-              <a
-                target="_blank"
-                href="https://www.canva.com/design/DAFtL9TrRIo/keEqSoZf6Zv4QJdbOcWgkg/view?utm_content=DAFtL9TrRIo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-              >
+              <a target="_blank" href={resume}>
                 <button type="button" className="btn aboutme dwl btn-dark">
                   Download CV{" "}
                   <i className="bi arrow bi-arrow-up-circle-fill"></i>
