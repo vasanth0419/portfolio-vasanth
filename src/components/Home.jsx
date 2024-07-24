@@ -44,7 +44,11 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6 text-center">
-            <img className="image" src="src/img/profile-1.jpg" alt="Profile" />
+            <img
+              className="image"
+              src="../../src/img/profile-1.jpg"
+              alt="Profile"
+            />
           </div>
         </div>
       </div>
