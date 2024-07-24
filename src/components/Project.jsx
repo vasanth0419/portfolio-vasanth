@@ -1,13 +1,25 @@
 import React from "react";
 import "./style.css/Project.css";
 import Footer from "./Footer";
+
+import mern from "../assets/project/main.png";
+import todo from "../assets/project/todo-app.png";
+import weather from "../assets/project/weather.png";
+
+import library from "../assets/project/library.png";
+
 const Project = () => {
   return (
     <>
       <div className="team_section">
         <h3 className="headings">My project</h3>
         <div className="container-fluid project">
-          <div className="team pro-1">
+          <div
+            style={{
+              backgroundImage: `url(${mern})`,
+            }}
+            className="team pro-1"
+          >
             <div className="overlay">
               <h3>Mern project</h3>
 
@@ -31,7 +43,12 @@ const Project = () => {
               </ul>
             </div>
           </div>
-          <div className="team pro-2">
+          <div
+            style={{
+              backgroundImage: `url(${todo})`,
+            }}
+            className="team pro-2"
+          >
             <div className="overlay">
               <h3>Todo-app</h3>
 
@@ -53,7 +70,12 @@ const Project = () => {
               </ul>
             </div>
           </div>
-          <div className="team pro-3">
+          <div
+            style={{
+              backgroundImage: `url(${weather})`,
+            }}
+            className="team pro-3"
+          >
             <div className="overlay">
               <h3>Weather</h3>
 
@@ -75,7 +97,12 @@ const Project = () => {
               </ul>
             </div>
           </div>
-          <div className="team pro-4">
+          <div
+            style={{
+              backgroundImage: `url(${library})`,
+            }}
+            className="team pro-4"
+          >
             <div className="overlay">
               <h3>Library</h3>
 
