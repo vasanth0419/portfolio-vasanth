@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css/About.css";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-
+import profile from "../assets/tech/profile-1.jpg";
 const About = () => {
   return (
     <>
@@ -53,11 +53,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-md-5 text-center">
-            <img
-              className="image-2"
-              src="src/img/profile-1.jpg"
-              alt="Profile"
-            />
+            <img className="image-2" src={profile} alt="Profile" />
           </div>
         </div>
       </div>
