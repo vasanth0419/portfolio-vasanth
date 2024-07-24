@@ -1,45 +1,58 @@
 import React from "react";
 import "./style.css/Skills.css";
 import Education from "./Education";
+import html from "../assets/tech/html5.png";
 
+import css from "../assets/tech/css.png";
+import js from "../assets/tech/js.png";
+import react from "../assets/tech/react.png";
+import nodejs from "../assets/tech/nodejs.png";
+import express from "../assets/tech/express.png";
+import mongodb from "../assets/tech/mongodb.png";
+import bootstrap from "../assets/tech/bootstrap.png";
+import tailwindcss from "../assets/tech/tailwind.png";
+import redux from "../assets/tech/redux.png";
+import formik from "../assets/tech/formik.png";
+import git from "../assets/tech/git.png";
+import github from "../assets/tech/github.png";
 const skills = [
-  { src: "../../src/assets/tech/html5.png", alt: "HTML 5", label: "HTML 5" },
-  { src: "../../src/assets/tech/css.png", alt: "CSS 3", label: "CSS 3" },
+  { src: html, alt: "HTML 5", label: "HTML 5" },
+  { src: css, alt: "CSS 3", label: "CSS 3" },
   {
-    src: "../../src/assets/tech/js.png",
+    src: js,
     alt: "JavaScript",
     label: "JavaScript",
   },
   {
-    src: "../../src/assets/tech/react.png",
+    src: react,
     alt: "React JS",
     label: "React JS",
   },
-  { src: "../../src/assets/tech/nodejs.png", alt: "Node JS", label: "Node JS" },
+  { src: nodejs, alt: "Node JS", label: "Node JS" },
   {
-    src: "../../src/assets/tech/express.png",
+    src: express,
     alt: "Express JS",
     label: "Express JS",
   },
   {
-    src: "../../src/assets/tech/mongodb.png",
+    src: mongodb,
     alt: "MongoDB",
     label: "MongoDB",
   },
   {
-    src: "../../src/assets/tech/bootstrap.png",
+    src: bootstrap,
     alt: "Bootstrap",
     label: "Bootstrap",
   },
   {
-    src: "../../src/assets/tech/tailwind.png",
+    src: tailwindcss,
     alt: "Tailwind CSS",
     label: "Tailwind CSS",
   },
-  { src: "../../src/assets/tech/redux.png", alt: "Redux", label: "Redux" },
-  { src: "../../src/assets/tech/formik.png", alt: "Formik", label: "Formik" },
-  { src: "../../src/assets/tech/git.png", alt: "Git", label: "Git" },
-  { src: "../../src/assets/tech/github.png", alt: "GitHub", label: "GitHub" },
+  { src: redux, alt: "Redux", label: "Redux" },
+  { src: formik, alt: "Formik", label: "Formik" },
+  { src: git, alt: "Git", label: "Git" },
+  { src: github, alt: "GitHub", label: "GitHub" },
 ];
 
 const Skills = () => {
