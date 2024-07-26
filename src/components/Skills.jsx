@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css/Skills.css";
 import Education from "./Education";
 import html from "../assets/tech/html5.png";
-
+import { motion } from "framer-motion";
 import css from "../assets/tech/css.png";
 import js from "../assets/tech/js.png";
 import react from "../assets/tech/react.png";
@@ -58,36 +58,42 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <div className="container-fluid mt-4 skills">
-        <div className="container skills-2">
-          <h1 className="text-center text-light head-skill mb-4">
-            {" "}
-            <span>
-              <i class="bi bi-laptop"></i>
-            </span>{" "}
-            Skills
-          </h1>
-          <div className="d-flex flex-wrap justify-content-center gap-5">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="d-flex flex-column img-div align-items-center"
-              >
-                <img
-                  loading="lazy"
-                  src={skill.src}
-                  alt={skill.alt}
-                  className="skill-img"
-                />
-                <p className="text-center head-skill text-light text-xs">
-                  {skill.label}
-                </p>
-              </div>
-            ))}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container-fluid mt-4 skills">
+          <div className="container skills-2">
+            <h1 className="text-center text-light head-skill mb-4">
+              {" "}
+              <span>
+                <i class="bi bi-laptop"></i>
+              </span>{" "}
+              Skills
+            </h1>
+            <div className="d-flex flex-wrap justify-content-center gap-5">
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="d-flex flex-column img-div align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    src={skill.src}
+                    alt={skill.alt}
+                    className="skill-img"
+                  />
+                  <p className="text-center head-skill text-light text-xs">
+                    {skill.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <Education />
+        <Education />
+      </motion.div>
     </>
   );
 };

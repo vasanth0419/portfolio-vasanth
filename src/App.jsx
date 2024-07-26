@@ -6,15 +6,16 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contactus from "./components/Contactus";
 import Project from "./components/Project";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import { AnimatePresence } from "framer-motion";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 const App = () => {
+  const location = useLocation();
   return (
     <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
@@ -22,10 +23,14 @@ const App = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contactus />} />
         </Routes>
-      </BrowserRouter>
-      
+      </AnimatePresence>
     </div>
   );
 };
+const AppWrapper = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
 
-export default App;
+export default AppWrapper;

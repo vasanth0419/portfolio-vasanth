@@ -1,12 +1,18 @@
 import React from "react";
 import "./style.css/About.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Footer from "./Footer";
 import profile from "../assets/tech/profile-1.jpg";
 import resume from "../assets/resume/cv.pdf";
 const About = () => {
   return (
     <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
       <div className="container-fluid aboutpage">
         <h1 className="about">
           <i className="bi bi-person-fill"></i> About Me
@@ -58,7 +64,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer /></motion.div>
     </>
   );
 };
