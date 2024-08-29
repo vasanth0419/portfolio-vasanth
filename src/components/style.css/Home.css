@@ -53,16 +53,19 @@
   font-family: "Lora", serif;
   font-size: 2rem;
   border-right: 3px solid rgb(220, 0, 240);
-
   width: 21ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3.5s steps(21), blink 0.75s step-end infinite alternate;
+  animation: typing 3.5s steps(21) forwards,
+    blink 0.75s step-end infinite alternate;
 }
 
 @keyframes typing {
   from {
     width: 0;
+  }
+  to {
+    width: 21ch; 
   }
 }
 
